@@ -4,8 +4,8 @@
   "description": "NodeJS API using Clean Architecture",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watchAll",
-    "test:staged": "jest"
+    "test": "jest --watch --silent --clors --noStackTrace",
+    "test:staged": "jest --passWithNoTests --findRelatedTests --clors --noStackTrace"
   },
   "standard": {
     "env": [
