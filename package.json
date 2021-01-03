@@ -4,14 +4,14 @@
   "description": "NodeJS API using Clean Architecture",
   "main": "index.js",
   "scripts": {
-	"test": "jest --watchAll",
-	"test:staged": "jest"
+    "test": "jest --watchAll",
+    "test:staged": "jest"
   },
   "lint-staged": {
     "*.js": [
-		"standard --fix",
-		"npm run test:staged",
-        "git add"
+      "standard --fix",
+      "npm run test:staged",
+      "git add"
     ]
   },
   "husky": {
@@ -20,7 +20,9 @@
     }
   },
   "standard": {
-	"env": ["jest"]
+    "env": [
+      "jest"
+    ]
   },
   "repository": {
     "type": "git",
@@ -33,7 +35,7 @@
   },
   "homepage": "https://github.com/GustavoEklund/clean-node-api#readme",
   "devDependencies": {
-    "husky": "^5.0.6",
+    "husky": "^4.3.6",
     "jest": "^26.6.3",
     "lint-staged": "^10.5.3",
     "standard": "^16.0.3"
