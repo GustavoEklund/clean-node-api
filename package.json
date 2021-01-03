@@ -7,6 +7,18 @@
 	"test": "jest --watchAll",
 	"test:staged": "jest"
   },
+  "lint-staged": {
+    "*.js": [
+		"standard --fix",
+		"npm run test:staged",
+        "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "standard": {
 	"env": ["jest"]
   },
